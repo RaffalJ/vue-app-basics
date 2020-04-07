@@ -1,12 +1,27 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Dashboard</router-link> |
+      <router-link to="/posts/new">Add new post</router-link>
     </div>
     <router-view />
   </div>
 </template>
+
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api';
+import { provideRouter } from '@/composables/use-router';
+import { provideStore } from '@/composables/use-store';
+
+export default defineComponent({
+  name: 'app',
+  components: {},
+  setup(_, context) {
+    provideRouter(context.root.$router);
+    provideStore(context.root.$store);
+  },
+});
+</script>
 
 <style lang="scss">
 #app {
