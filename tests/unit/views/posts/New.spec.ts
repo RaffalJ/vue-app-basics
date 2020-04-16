@@ -81,12 +81,12 @@ describe('PostsNew', () => {
             errors: [
               {
                 source: 'Image',
-                detail: "Can't be blank",
-              },
+                detail: "Can't be blank"
+              }
             ]
           }
         }
-      }
+      };
       sinon
         .mock(toBase64)
         .expects('default')
@@ -98,7 +98,7 @@ describe('PostsNew', () => {
 
       await subject.vm.handleSubmit();
       expect(subject.vm.$data.formErrors).to.deep.equal([
-        "Image can't be blank",
+        "Image can't be blank"
       ]);
     });
   });

@@ -19,7 +19,7 @@ export default defineComponent({
   setup(_, context) {
     provideRouter(context.root.$router);
     provideStore(context.root.$store);
-  },
+  }
 });
 </script>
 

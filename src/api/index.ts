@@ -1,9 +1,9 @@
 import { instance as axios } from './axios-instance';
 
 const urls = {
-  rooms: '/rooms',
+  rooms: '/rooms'
 };
 
 export default {
-  fetchRooms: () => axios.get(urls.rooms),
+  fetchRooms: () => axios.get(urls.rooms)
 };

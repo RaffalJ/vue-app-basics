@@ -7,13 +7,14 @@ const routes = [
   {
     path: '/',
     name: 'Dashboard',
-    component: () => import(/* webpackChunkName: "home" */ '../views/Dashboard.vue'),
+    component: () =>
+      import(/* webpackChunkName: "home" */ '../views/Dashboard.vue')
   },
   {
     path: '/rooms',
     name: 'Rooms',
-    component: () => import(/* webpackChunkName: "home" */ '../views/Rooms.vue'),
-  },
+    component: () => import(/* webpackChunkName: "home" */ '../views/Rooms.vue')
+  }
 ];
 
 const router = new VueRouter({
