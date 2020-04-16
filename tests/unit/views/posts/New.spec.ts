@@ -29,8 +29,6 @@ describe('PostsNew', () => {
     expect(subject.isVueInstance()).to.be.true;
   });
 
-  it('')
-
   it('sets correct initial values', () => {
     expect(subject.vm.$data.formNewPost).to.deep.equal({
       content: '',

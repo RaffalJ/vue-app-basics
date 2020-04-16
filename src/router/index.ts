@@ -10,10 +10,10 @@ const routes = [
     component: () => import(/* webpackChunkName: "home" */ '../views/Dashboard.vue'),
   },
   {
-    path: '/posts/new',
-    name: 'PostsNew',
-    component: () => import(/* webpackChunkName: "home" */ '../views/posts/New.vue'),
-  }
+    path: '/rooms',
+    name: 'Rooms',
+    component: () => import(/* webpackChunkName: "home" */ '../views/Rooms.vue'),
+  },
 ];
 
 const router = new VueRouter({

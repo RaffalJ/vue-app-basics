@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Dashboard</router-link> |
-      <router-link to="/posts/new">Add new post</router-link>
+      <router-link to="/rooms">Rooms</router-link>
     </div>
     <router-view />
   </div>
