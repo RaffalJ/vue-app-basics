@@ -16,7 +16,7 @@
     "@types/sinon": "^9.0.0",
     "@types/sinon-chai": "^3.2.4",
     "@vue/composition-api": "^0.5.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "chai-spies": "^1.0.0",
     "core-js": "^3.6.4",
     "file-system": "^2.2.2",
